@@ -32,9 +32,18 @@ namespace signal_analizer
 
         public int CountThreatsPerHour()
         {
-            int howMany = 0;
+            DateTime now = new DateTime();
+            int hourNow = now.Hour;
+            int countSignals = 0;
 
-            return 0;
+            foreach (Signal signal in interceptedSignals)
+            {
+                if (signal.GetTimestamp().Hour == hourNow)
+                {
+                    countSignals++;
+                }
+            }
+            return countSignals;
         }
     }
 }
