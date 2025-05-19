@@ -41,5 +41,6 @@ namespace signal_analizer
             return $"message: {this.RawMessage}\n" +
                 $"datetime: {this.Timestamp}";
         }
+
     }
 }

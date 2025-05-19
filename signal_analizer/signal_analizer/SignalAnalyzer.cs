@@ -8,9 +8,13 @@ namespace signal_analizer
 {
     internal class SignalAnalyzer
     {
-        private ThreatDictionary threatDictionary = new ThreatDictionary();
+        private ThreatDictionary threatDictionary;
         private List<Signal> interceptedSignals = new List<Signal>();
 
+        public SignalAnalyzer(ThreatDictionary TD)
+        {
+            threatDictionary = TD;
+        }
         public void AddSignal(Signal signal)
         {
             this.interceptedSignals.Add(signal);
@@ -32,11 +36,14 @@ namespace signal_analizer
 
         public int CountThreatsPerHour()
         {
-            DateTime now = new DateTime();
+
+            List<Signal> dangarousSignals = GetThreats();
+
+            DateTime now = DateTime.Now;
             int hourNow = now.Hour;
             int countSignals = 0;
 
-            foreach (Signal signal in interceptedSignals)
+            foreach (Signal signal in dangarousSignals)
             {
                 if (signal.GetTimestamp().Hour == hourNow)
                 {
@@ -44,6 +51,15 @@ namespace signal_analizer
                 }
             }
             return countSignals;
+        }
+
+        public void PrintSignalList(List<Signal> signalList)
+        {
+            foreach (Signal signal in signalList)
+            {
+                Console.WriteLine(signal);
+                Console.WriteLine();
+            }
         }
     }
 }

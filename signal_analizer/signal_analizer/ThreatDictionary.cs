@@ -38,5 +38,13 @@ namespace signal_analizer
             }
             return threat;
         }
+
+        public void PrintKeywords()
+        {
+            foreach (string word in this.keywords)
+            {
+                Console.WriteLine(word);
+            }
+        }
     }
 }
