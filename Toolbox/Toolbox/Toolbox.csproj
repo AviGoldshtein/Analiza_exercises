@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B6B1A7AF-84D0-4321-82A2-AF3B51F00182}</ProjectGuid>
+    <ProjectGuid>{0A4D8DC8-AC80-4D2C-8FDE-1AC3252701CB}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>signal_analizer</RootNamespace>
-    <AssemblyName>signal_analizer</AssemblyName>
+    <RootNamespace>Toolbox</RootNamespace>
+    <AssemblyName>Toolbox</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,11 +43,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Drill.cs" />
+    <Compile Include="Hammer.cs" />
+    <Compile Include="NailGun.cs" />
+    <Compile Include="PipeCutter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Signal.cs" />
-    <Compile Include="SignalAnalyzer.cs" />
-    <Compile Include="ThreatDictionary.cs" />
+    <Compile Include="Saw.cs" />
+    <Compile Include="Screwdriver.cs" />
+    <Compile Include="Tool.cs" />
+    <Compile Include="ToolBoxAll.cs" />
+    <Compile Include="WireStripper.cs" />
+    <Compile Include="Wrench.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
