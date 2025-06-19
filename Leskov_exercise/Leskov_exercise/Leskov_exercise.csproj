@@ -43,19 +43,50 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Exercise_1\Bird.cs" />
-    <Compile Include="Exercise_1\ICanFly.cs" />
-    <Compile Include="Exercise_1\Penguin.cs" />
-    <Compile Include="Exercise_1\TestEX1.cs" />
-    <Compile Include="Exercise_3\DocumentExporter.cs" />
-    <Compile Include="Exercise_3\IHtmlExportable.cs" />
-    <Compile Include="Exercise_3\IPdfExportable.cs" />
-    <Compile Include="Exercise_3\OnlineExporter.cs" />
-    <Compile Include="Exercise_3\TestEX3.cs" />
+    <Compile Include="DIP_Exercises\DExercise_1\ConsoleLogger.cs" />
+    <Compile Include="DIP_Exercises\DExercise_1\FileLogger.cs" />
+    <Compile Include="DIP_Exercises\DExercise_1\ILogger.cs" />
+    <Compile Include="DIP_Exercises\DExercise_1\MissionController.cs" />
+    <Compile Include="DIP_Exercises\DExercise_1\TestDex1.cs" />
+    <Compile Include="DIP_Exercises\DExercise_2\ILieDetector.cs" />
+    <Compile Include="DIP_Exercises\DExercise_2\TerroristInterrogationUnit.cs" />
+    <Compile Include="DIP_Exercises\DExercise_2\TestDex2.cs" />
+    <Compile Include="DIP_Exercises\DExercise_2\ThermalScanner.cs" />
+    <Compile Include="DIP_Exercises\DExercise_2\VoiceAnalyzer.cs" />
+    <Compile Include="DIP_Exercises\DExercise_3\BaseDefenseController.cs" />
+    <Compile Include="DIP_Exercises\DExercise_3\DroneDispatchAlert.cs" />
+    <Compile Include="DIP_Exercises\DExercise_3\IAlert.cs" />
+    <Compile Include="DIP_Exercises\DExercise_3\SirenAlert.cs" />
+    <Compile Include="DIP_Exercises\DExercise_3\TestDex3.cs" />
+    <Compile Include="DIP_Exercises\DExercise_4\Entities\ControlRoom.cs" />
+    <Compile Include="DIP_Exercises\DExercise_4\Entities\FileLogger.cs" />
+    <Compile Include="DIP_Exercises\DExercise_4\Entities\IntelligenceService.cs" />
+    <Compile Include="DIP_Exercises\DExercise_4\Entities\MapService.cs" />
+    <Compile Include="DIP_Exercises\DExercise_4\Entities\MissionPlanner.cs" />
+    <Compile Include="DIP_Exercises\DExercise_4\Interfaces\IIntelligenceService.cs" />
+    <Compile Include="DIP_Exercises\DExercise_4\Interfaces\ILoggerX2.cs" />
+    <Compile Include="DIP_Exercises\DExercise_4\Interfaces\IMapService.cs" />
+    <Compile Include="DIP_Exercises\DExercise_4\Interfaces\IMissionPlanner.cs" />
+    <Compile Include="DIP_Exercises\DExercise_4\TestDex4.cs" />
+    <Compile Include="LSP_Exercises\LExercise_1\Bird.cs" />
+    <Compile Include="LSP_Exercises\LExercise_1\ICanFly.cs" />
+    <Compile Include="LSP_Exercises\LExercise_1\Penguin.cs" />
+    <Compile Include="LSP_Exercises\LExercise_1\TestLex1.cs" />
+    <Compile Include="LSP_Exercises\LExercise_3\DocumentExporter.cs" />
+    <Compile Include="LSP_Exercises\LExercise_3\IHtmlExportable.cs" />
+    <Compile Include="LSP_Exercises\LExercise_3\IPdfExportable.cs" />
+    <Compile Include="LSP_Exercises\LExercise_3\OnlineExporter.cs" />
+    <Compile Include="LSP_Exercises\LExercise_3\TestLex3.cs" />
+    <Compile Include="LSP_Exercises\LExercise_4\BankAccount.cs" />
+    <Compile Include="LSP_Exercises\LExercise_4\IAccount.cs" />
+    <Compile Include="LSP_Exercises\LExercise_4\TestLex4.cs" />
+    <Compile Include="LSP_Exercises\LExercise_5\StrictValidator.cs" />
+    <Compile Include="LSP_Exercises\LExercise_5\TestLex5.cs" />
+    <Compile Include="LSP_Exercises\LExercise_5\Validator.cs" />
     <Compile Include="MainTest.cs" />
-    <Compile Include="Exercise_2\Rectangle.cs" />
-    <Compile Include="Exercise_2\Square.cs" />
-    <Compile Include="Exercise_2\TestEX2.cs" />
+    <Compile Include="LSP_Exercises\LExercise_2\Rectangle.cs" />
+    <Compile Include="LSP_Exercises\LExercise_2\Square.cs" />
+    <Compile Include="LSP_Exercises\LExercise_2\TestLex2.cs" />
     <Compile Include="Itest.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -63,8 +94,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Exercise_4\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

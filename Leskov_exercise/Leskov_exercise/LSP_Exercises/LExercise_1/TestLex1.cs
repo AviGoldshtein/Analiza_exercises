@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Leskov_exercise.Exercise_1
 {
-    internal class TestEX1 : Itest
+    internal class TestLex1 : Itest
     {
         public void Run()
         {
